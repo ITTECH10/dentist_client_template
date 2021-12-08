@@ -17,12 +17,20 @@ import {
   AppConversionRates
 } from '../components/_dashboard/app';
 
+import ActionButton from '../components/ActionButton';
+import SpeedDialIcon from '@mui/material/SpeedDialIcon';
+import { actions } from './../utils/DataProviders/ActionButton'
+
 // ----------------------------------------------------------------------
 
 export default function DashboardApp() {
   return (
     <Page title="Dashboard | Minimal-UI">
       <Container maxWidth="xl">
+        <ActionButton
+          actions={actions}
+          actionIcon={<SpeedDialIcon />}
+        />
         <Box sx={{ pb: 5 }}>
           <Typography variant="h4">Pozdrav, dobrodošli nazad!</Typography>
         </Box>
