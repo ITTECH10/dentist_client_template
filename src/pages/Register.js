@@ -43,18 +43,18 @@ export default function Register() {
   return (
     <RootStyle title="Register | Minimal-UI">
       <AuthLayout>
-        Already have an account? &nbsp;
+        Već imate račun? &nbsp;
         <Link underline="none" variant="subtitle2" component={RouterLink} to="/login">
-          Login
+          Prijava
         </Link>
       </AuthLayout>
 
       <MHidden width="mdDown">
         <SectionStyle>
           <Typography variant="h3" sx={{ px: 5, mt: 10, mb: 5 }}>
-            Manage the job more effectively with Minimal
+            Organizujte vaš posao uz hDental
           </Typography>
-          <img alt="register" src="/static/illustrations/illustration_register.png" />
+          <img alt="register" src="/static/illustrations/dental-register-organize.jpg" />
         </SectionStyle>
       </MHidden>
 
@@ -62,34 +62,34 @@ export default function Register() {
         <ContentStyle>
           <Box sx={{ mb: 5 }}>
             <Typography variant="h4" gutterBottom>
-              Get started absolutely free.
+              Započnite sa time što ćete napraviti račun!
             </Typography>
-            <Typography sx={{ color: 'text.secondary' }}>
+            {/* <Typography sx={{ color: 'text.secondary' }}>
               Free forever. No credit card needed.
-            </Typography>
+            </Typography> */}
           </Box>
 
-          <AuthSocial />
+          {/* <AuthSocial /> */}
 
           <RegisterForm />
 
           <Typography variant="body2" align="center" sx={{ color: 'text.secondary', mt: 3 }}>
-            By registering, I agree to Minimal&nbsp;
+            Registrujući se, prihvatam&nbsp;
             <Link underline="always" sx={{ color: 'text.primary' }}>
-              Terms of Service
+              uslove korištenja aplikacije hDental
             </Link>
-            &nbsp;and&nbsp;
+            &nbsp;i&nbsp;
             <Link underline="always" sx={{ color: 'text.primary' }}>
-              Privacy Policy
+              Pravila Privatnosti
             </Link>
             .
           </Typography>
 
           <MHidden width="smUp">
             <Typography variant="subtitle2" sx={{ mt: 3, textAlign: 'center' }}>
-              Already have an account?&nbsp;
+              Već imate račun?&nbsp;
               <Link to="/login" component={RouterLink}>
-                Login
+                Prijava
               </Link>
             </Typography>
           </MHidden>
